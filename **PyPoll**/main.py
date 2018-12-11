@@ -19,5 +19,20 @@ with open(csvpath) as csvfile:
     csv_header = next(csvreader)
 
     #test to make sure I am connected 
+    #for row in csvreader:
+        #print(row)
+    
     for row in csvreader:
-        print(row)
+        #The total number of votes cast
+        totalvoters.append(row[0])
+
+        #A complete list of candidates who received votes
+        
+        candidates.append(row[2])
+        #The percentage of votes each candidate won
+
+        #The total number of votes each candidate won
+
+        #The winner of the election based on popular vote.
+    print (totalvoters)
+   

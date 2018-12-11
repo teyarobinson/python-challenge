@@ -40,14 +40,13 @@ with open(csvpath) as csvfile:
         netprofit.append(int(row[1]))
     
   
-        
-    #* The average change in "Profit/Losses" between months over the entire period
+        #greatest increase in profits 
+    for i in range(len(netprofit)):
+        avgchange.append(netprofit[i +1]-netprofit[i])    
+   
     avg = average(netprofit)
-
-    #* The greatest increase in profits (date and amount) over the entire period
-
-    #* The greatest decrease in losses (date and amount) over the entire period    
-
+  
+    #total amount of months, profits, averate of profits, greatest increase in profits, greatest decrease in loss 
     print("Total Amount of Months" + " " + str(len(months))) 
     print ("The sum of the profits is" + " "+ str((sum(netprofit))))
     print("The sum of the profits is" + " "+ str(round(avg,2)))
