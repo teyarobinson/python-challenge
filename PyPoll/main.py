@@ -27,8 +27,7 @@ with open(csvpath) as csvfile:
         totalvoters.append(row[0])
 
         #A complete list of candidates who received votes
-        
-        candidates.append(row[2])
+    for i in range(len(p))
         #The percentage of votes each candidate won
 
         #The total number of votes each candidate won
